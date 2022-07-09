@@ -2,9 +2,9 @@
 
 MNMLSM is a simple theme inspired by the command line. It has a darkmode and no javascript. In other words: it is future proof.
 
-Preview Light             |  Preview Dark
-:-------------------------:|:-------------------------:
-![Preview Light](preview-light.png) |   ![Preview Dark](preview-dark.png)
+|            Preview Light            |           Preview Dark            |
+|:-----------------------------------:|:---------------------------------:|
+| ![Preview Light](preview-light.png) | ![Preview Dark](preview-dark.png) |
 
 The theme was created by [Ungeschneuer](https://github.com/ungeschneuer). A preview can be found [here](https://michaelbarney.github.io/LinkFree/Templates/mnmlsm/).
 
