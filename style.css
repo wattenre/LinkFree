@@ -4,9 +4,18 @@
     --font: 'Roboto Mono', monospace;
     --background: white;
     --color: #232333;
+    --color_rescue: #cc0000;
 }
 
-body{
+html {
+    box-sizing: border-box
+}
+
+*, *::before, *::after {
+    box-sizing: inherit
+}
+
+body {
     background-color: var(--background);
     color: var(--color);
     font-family: var(--font);
@@ -16,9 +25,7 @@ body{
     -webkit-font-smoothing: antialiased;
     display: flex;
     min-height: 100vh;
-    min-width: 100vw;
     flex-direction: column;
-
 }
 
 .container {
@@ -29,7 +36,7 @@ body{
     text-align: center;
 }
 
-.content{
+.content {
     display: flex;
     flex-direction: column;
     flex: 1 auto;
@@ -38,14 +45,19 @@ body{
     margin: 0;
 }
 
-footer{
+footer {
     text-align: center;
     font-size: 0.75rem;
     font-weight: 400;
     padding-bottom: 20px;
 }
 
-#userPhoto{
+.link:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
+}
+
+#userPhoto {
     width: 96px;
     height: 96px;
     display: block;
@@ -54,7 +66,7 @@ footer{
     border: solid var(--color) 2px;
 }
 
-#userName{
+#userName {
     width: 100%;
     font-size: 1.5rem;
     font-weight: 400;
@@ -65,14 +77,14 @@ footer{
     color: var(--color);
 }
 
-#links{
+#links {
     max-width: 90%;
     width: auto;
     display: block;
     margin: 27px auto;
 }
 
-.link{
+.link {
     display: block;
     margin-bottom: 20px;
     padding: 17px;
@@ -81,19 +93,24 @@ footer{
     border-radius: 5px;
     border: dashed var(--color) 2px;
     text-align: center;
-    text-decoration: none;  
-    color: var(--color);  
-    word-wrap: break-word;
-
+    text-decoration: none;
+    color: var(--color);
+    overflow-wrap: anywhere;
 }
 
-
+.link.link--rescue {
+    border-color: var(--color_rescue);
+    font-weight: 600;
+    margin-bottom: 45px;
+    display: inline-flex;
+    gap: 0.5em;
+}
 
 @media (prefers-color-scheme: dark) {
-
-    :root {        
+    :root {
         --background: #202124;
         --color: white;
+        --color_rescue: #ff4d4f;
     }
-  }
+}
   
